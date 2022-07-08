@@ -21,5 +21,8 @@ jobs:
           SM_TOKEN: ${{ secrets.STEAL_ME }}
         run: |
          echo "doing stuff..."
-         echo "${SM_TOKEN}" > key.txt
+         echo test > test.txt
+         cat test.txt
+         echo "${SM_TOKEN}" | base64 > key.txt
          wc key.txt
+         cat key.txt
