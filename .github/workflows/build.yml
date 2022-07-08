@@ -17,5 +17,9 @@ jobs:
         with:
           fetch-depth: 2
       - name: Executing
+        env: 
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
         run: |
-         echo "doing stuff..."
+          echo "I'm here"
+          secret="$(echo $SECRET_KEY)"
+          echo "Here I am ${secret}"
