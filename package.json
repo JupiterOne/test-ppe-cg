@@ -1,0 +1,12 @@
+{
+  "name": "test-ppe-cg",
+  "version": "1.0.0",
+  "description": "test poison pipeline execution",
+  "main": "index.js",
+  "scripts": {
+    "run": "node index.js"
+  },
+  "repository": "git@github.com:JupiterOne/test-ppe-cg.git",
+  "author": "Cameron Griffin <cameron.griffin@jupiterone.com>",
+  "license": "MIT"
+}

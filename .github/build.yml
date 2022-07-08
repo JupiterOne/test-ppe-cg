@@ -1,0 +1,20 @@
+name: hello
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  BuildRelease:
+    runs-on: ubuntu-latest
+    name: Say Hello
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - name: Check out repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
