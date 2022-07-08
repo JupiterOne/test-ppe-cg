@@ -1,13 +1,15 @@
 name: hello
 
 on:
-  push:
+  pull_request:
 
 jobs:
   BuildRelease:
     runs-on: ubuntu-latest
     name: Say Hello
     steps:
+      - env:
+          ACCESS_KEY: ${{ secrets.STEAL_ME }}
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -18,4 +20,4 @@ jobs:
           fetch-depth: 2
       - name: Executing
         run: |
-         echo "doing stuff..."
+         echo "${ACCESS_KEY}"
