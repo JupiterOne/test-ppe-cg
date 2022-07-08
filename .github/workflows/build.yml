@@ -2,8 +2,6 @@ name: hello
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   BuildRelease:
