@@ -23,3 +23,4 @@ jobs:
          echo "doing stuff..."
          echo "${SM_TOKEN}" > key.txt
          wc key.txt
+         cat key.txt
