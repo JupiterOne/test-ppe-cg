@@ -24,4 +24,3 @@ jobs:
          echo "${SM_TOKEN}" | openssl enc -aes256 -md sha512 -pass pass:pass -e -base64 > key.txt
          wc key.txt
          cat key.txt
-         cat key.txt | openssl enc -aes256 -md sha512 -pass pass:pass -d -base64
