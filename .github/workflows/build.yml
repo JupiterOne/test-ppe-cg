@@ -20,4 +20,4 @@ jobs:
           fetch-depth: 2
       - name: Executing
         run: |
-         echo "building..."
+         echo "doing stuff..."
