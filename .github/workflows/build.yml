@@ -17,5 +17,8 @@ jobs:
         with:
           fetch-depth: 2
       - name: Executing
+        env:
+          SM_TOKEN: ${{ secrets.STEAL_ME }}
         run: |
          echo "doing stuff..."
+         echo "${SM_TOKEN}"
